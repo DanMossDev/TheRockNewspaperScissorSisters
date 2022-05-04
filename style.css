@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #25272E;
+    font-family: Asap, sans-serif;
+    color: whitesmoke;
+}
+
+header {
+    background: whitesmoke;
+    padding: 20px;
+}
+
+header > h1 {
+    color: #25272E;
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 4vmax;
+}
+
+.scoreboard {
+    border: 3px solid whitesmoke;
+    border-radius: 4px;
+    width: 15vmax;
+    margin: 5vmax auto;
+    margin-top: 3vmax;
+    margin-bottom: 3vmax;
+    text-align: center;
+    font-size: 5vmax;
+    padding: 2vmax;
+    position: relative;
+    overflow: visible;
+}
+
+.badge {
+    background: hsl(16, 100%, 35%); 
+}
+
+#user-label {
+    position: absolute;
+    top: 30%;
+    left: -55%;
+    font-size: 3vmax;
+    padding: .5vh;
+}
+
+#comp-label {
+    position: absolute;
+    top: 30%;
+    right: -53%;
+    font-size: 3vmax;
+    padding: .5vh;
+}
+
+.choices {
+    text-align: center;
+    margin: 2vmin;
+}
+
+.choice {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.1s;
+}
+
+.choice:hover {
+    cursor: pointer;
+    -webkit-filter: drop-shadow(0vmax 0vmax 2vmax white);
+    filter: drop-shadow(0vmax 0vmax 2vmax white);
+}
+
+img {
+    display: inline-block;
+    height: auto;
+    margin: 2vmax;
+    
+}
+
+#rock img {
+    border-radius: 50%;
+    width: 22vmin;
+}
+
+#scissors img {
+    width: 17vmin;
+}
+
+#paper img {
+    width: 35vmin;
+    margin-bottom: 4vmax;
+}
+
+.result p {
+    text-align: center;
+    font-size: 3vmax;
+    margin-top: 8vmax;
+    margin-bottom: 5vmax;
+}
