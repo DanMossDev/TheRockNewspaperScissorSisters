@@ -20,12 +20,12 @@ function updateScore(outcome, user, comp) {
     switch(outcome) {
         case 'win':
             userScore++;
-            userScore_span.innerHTML = userScore;
+            userScore_span.textContent = userScore;
             scoreboard_div.style.backgroundColor = "darkgreen";
             return;
         case 'loss':
             compScore++;
-            compScore_span.innerHTML = compScore;
+            compScore_span.textContent = compScore;
             scoreboard_div.style.backgroundColor = "darkred";
             return;
         default:
@@ -41,7 +41,7 @@ function game(userChoice) {
             switch(compChoice) {
                 case 'rock':
                     updateScore('draw');
-                    result_div.innerHTML = 'The Rock cannot be beaten. Not even by The Rock.<br> Draw.';
+                    result_div.innerHTML = 'The Rock cannot be beaten. Not even by The Rock.<br> Draw.'; //use of innerHTML okay since there's no user text input
                     return;
                 case 'paper':
                     updateScore('loss');
